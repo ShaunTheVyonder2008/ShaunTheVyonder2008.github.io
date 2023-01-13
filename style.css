@@ -1,0 +1,21 @@
+/* 
+ *TTNRT CORP
+*/ 
+body {
+background-color: grey;
+transition: all 0.5s ease;
+}
+
+code {
+background:black;
+
+border:1px solid white;
+
+padding:5px 10px;
+
+color: white;
+}
+
+* {
+	transition: all 0.5s ease;
+}
