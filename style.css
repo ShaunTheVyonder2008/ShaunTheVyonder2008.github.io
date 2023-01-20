@@ -50,7 +50,7 @@ ul.topnav {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	float: center;
+	float: right;
   }
   
   ul.topnav li {
@@ -65,10 +65,13 @@ ul.topnav {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	opacity: 0.8;
   }
    
   @media screen and (max-width: 600px) {
 	ul.topnav li.right, 
 	ul.topnav li {float: none;}
   }
+
+  ul.topnav li:hover {
+    opacity: 0.8;
+}
