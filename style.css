@@ -50,6 +50,7 @@ ul.topnav {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	float: center;
   }
   
   ul.topnav li {
@@ -66,13 +67,7 @@ ul.topnav {
 	text-decoration: none;
 	opacity: 0.8;
   }
-  
-  ul.topnav li a:hover:not(.active) {background-color: #111;}
-  
-  ul.topnav li a.active {background-color: #04AA6D;}
-  
-  ul.topnav li.right {float: right;}
-  
+   
   @media screen and (max-width: 600px) {
 	ul.topnav li.right, 
 	ul.topnav li {float: none;}
