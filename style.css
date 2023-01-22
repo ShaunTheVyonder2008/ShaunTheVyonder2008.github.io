@@ -52,6 +52,7 @@ ul.topnav {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	border-radius: 30px;
   }
   
   ul.topnav li {
@@ -75,4 +76,16 @@ ul.topnav {
 
   ul.topnav li:hover {
     opacity: 0.8;
+}
+
+.mainpage {
+	border-radius: 30px;
+	background-color: navy;
+}
+
+hr {
+	border-bottom-style: solid;
+	border-bottom-color: red;
+	border-block-width: thick;
+    writing-mode: horizontal-tb;
 }
