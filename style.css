@@ -80,11 +80,6 @@ ul.topnav {
     opacity: 0.8;
 }
 
-.mainpage {
-	border-radius: 30px;
-	background-color: rgb(36, 36, 168);
-}
-
 hr {
 	border-bottom-style: solid;
 	border-bottom-color: white;
@@ -93,18 +88,11 @@ hr {
 
 a {
 	text-decoration: none;
-	color: white
+	color: white;
+	opacity: 0.8;
 }
 
-.index {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "nav nav nav"
-        ". carousel ."
-        ". howpi ."
-        ". advert ."
-        "footer footer footer";
+h1,h2,h2,h4,p {
+	border-radius: 30px;
+	background-color: rgb(36, 36, 168);
 }
