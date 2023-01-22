@@ -2,7 +2,7 @@
  *TTNRT CORP
 */ 
 body {
-background-color: grey;
+background-color: rgb(0, 0, 0);
 transition: all 0.5s ease;
 font-family: sans-serif;
 color: white;
@@ -53,7 +53,7 @@ ul.topnav {
 	padding: 0;
 	overflow: hidden;
 	border-radius: 30px;
-	background-color: lightslategray;
+	background-color: rgb(8, 77, 146);
   }
   
   ul.topnav li {
@@ -81,7 +81,7 @@ ul.topnav {
 
 .mainpage {
 	border-radius: 30px;
-	background-color: navy;
+	background-color: rgb(36, 36, 168);
 }
 
 hr {
