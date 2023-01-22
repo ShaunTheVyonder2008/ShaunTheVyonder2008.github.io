@@ -53,6 +53,7 @@ ul.topnav {
 	padding: 0;
 	overflow: hidden;
 	border-radius: 30px;
+	background-color: lightslategray;
   }
   
   ul.topnav li {
@@ -85,7 +86,6 @@ ul.topnav {
 
 hr {
 	border-bottom-style: solid;
-	border-bottom-color: red;
-	border-block-width: thick;
+	border-bottom-color: rgb(122, 122, 122);
     writing-mode: horizontal-tb;
 }
