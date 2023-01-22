@@ -35,6 +35,7 @@ footer {
 footer a {
 	font-weight:  bold;
 	font-size:  18px;
+	opacity: 0.8;
 }
 
 
@@ -88,4 +89,22 @@ hr {
 	border-bottom-style: solid;
 	border-bottom-color: white;
     writing-mode: horizontal-tb;
+}
+
+a {
+	text-decoration: none;
+	color: white
+}
+
+.index {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "nav nav nav"
+        ". carousel ."
+        ". howpi ."
+        ". advert ."
+        "footer footer footer";
 }
