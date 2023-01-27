@@ -21,3 +21,8 @@ console.log('....................................');
 console.log('....................................');
 console.log('....................................');
 console.log('....................................');
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
