@@ -1,21 +1,25 @@
 /* 
  *TTNRT CORP
-*/ 
+*/
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-background-color: black;
-transition: all 0.5s ease;
-font-family: sans-serif;
-color: white;
+	background-color: rgb(255, 255, 255);
+	transition: all 0.5s ease;
+	font-family: sans-serif;
+	color: rgb(0, 0, 0);
 }
 
 code {
-background:black;
+	background: black;
 
-border:1px solid white;
+	border: 1px solid white;
 
-padding:5px 10px;
+	padding: 5px 10px;
 
-color: white;
+	color: white;
 }
 
 * {
@@ -24,28 +28,28 @@ color: white;
 
 
 footer {
-    grid-area: footer;
-    position:  relative;
-	bottom:  0;
-    margin:  auto;
-	width:  100%;
-	text-align:  center;
+	grid-area: footer;
+	position: relative;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	text-align: center;
 }
 
 footer a {
-	font-weight:  bold;
-	font-size:  18px;
+	font-weight: bold;
+	font-size: 18px;
 	opacity: 0.8;
 }
 
 
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 100%;
 }
 
 ul.topnav {
@@ -55,35 +59,38 @@ ul.topnav {
 	overflow: hidden;
 	border-radius: 30px;
 	background-color: rgb(5, 57, 109);
-  }
-  
-  ul.topnav li {
-	 float: left;
-	 color: white;
-	 cursor: pointer;
-  }
-  
-  ul.topnav li a {
+}
+
+ul.topnav li {
+	float: left;
+	color: white;
+	cursor: pointer;
+}
+
+ul.topnav li a {
 	display: block;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-  }
-   
-  @media screen and (max-width: 600px) {
-	ul.topnav li.right, 
-	ul.topnav li {float: none;}
-  }
+}
 
-  ul.topnav li:hover {
-    opacity: 0.8;
+@media screen and (max-width: 600px) {
+
+	ul.topnav li.right,
+	ul.topnav li {
+		float: none;
+	}
+}
+
+ul.topnav li:hover {
+	opacity: 0.8;
 }
 
 hr {
 	border-bottom-style: solid;
 	border-bottom-color: white;
-    writing-mode: horizontal-tb;
+	writing-mode: horizontal-tb;
 }
 
 a {
@@ -128,4 +135,17 @@ marguee {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+img {
+	backface-visibility: hidden; transition: transform 0.5s ease-in-out; overflow: hidden;
+}
+
+img:hover {
+	transform: scale(1.05)
+}
+
+.dark-mode {
+background-color: black;
+color: white;
 }

@@ -2,10 +2,17 @@
 
 <head>
     <link href="/style.css" rel="stylesheet">
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 </head>
 
 <body>
-    <img src="/images/logo.png" style="float: left; margin: 0; padding: 0; overflow: hidden; text-align: center; width: 64px;">
+    <img src="/images/logo.png"
+        style="float: left; margin: 0; padding: 0; overflow: hidden; text-align: center; width: 64px;">
     <ul class="topnav">
         <li>
             <a href="/" target="_parent">Home</a>
@@ -17,7 +24,8 @@
             <a href="/socials" target="_parent">Socials</a>
         </li>
         <li>
-            <a href="https://github.com/ShaunTheVyonder2008/ShaunTheVyonder2008.github.io" target="_parent">View this repo</a>
+            <a href="https://github.com/ShaunTheVyonder2008/ShaunTheVyonder2008.github.io" target="_parent">View this
+                repo</a>
         </li>
         <li>
             <a href="/downloads" target="_parent">Downloads</a>
@@ -29,6 +37,7 @@
             <a href="/faq" target="_parent">FAQ</a>
         </li>
     </ul>
+    <button onclick="myFunction()">Toggle dark mode</button>
 </body>
 
 </html>
