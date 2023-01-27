@@ -95,7 +95,6 @@ hr {
 
 a {
 	text-decoration: none;
-	color: white;
 	opacity: 0.8;
 }
 
@@ -146,6 +145,9 @@ img:hover {
 }
 
 .dark-mode {
+
 background-color: black;
+
 color: white;
+
 }
