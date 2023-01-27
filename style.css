@@ -95,6 +95,7 @@ a {
 .mainpage {
 	border-radius: 30px;
 	background-color: rgb(36, 36, 168);
+	padding: 10px;
 }
 
 .navimg {
