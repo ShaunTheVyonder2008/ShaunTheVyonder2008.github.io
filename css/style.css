@@ -118,7 +118,7 @@ a {
 }
 
 .main {
-	rgb(53, 53, 56);
+	color: rgb(53, 53, 56);
 }
 
 .mainpage a {
@@ -127,6 +127,10 @@ a {
 
 .mainpage .dark-mode a {
 	color: white;
+}
+
+.main .dark-mode a {
+	color: white
 }
 
 .navimg {
