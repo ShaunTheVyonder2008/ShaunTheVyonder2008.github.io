@@ -117,6 +117,10 @@ a {
 	color: white;
 }
 
+.main {
+	rgb(53, 53, 56);
+}
+
 .mainpage a {
 	color: rgb(0, 0, 0);
 }
