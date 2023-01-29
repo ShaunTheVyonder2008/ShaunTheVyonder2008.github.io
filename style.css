@@ -113,6 +113,14 @@ a {
 	color: white;
 }
 
+.mainpage a {
+	color: rgb(0, 0, 0);
+}
+
+.mainpage .dark-mode a {
+	color: white;
+}
+
 .navimg {
 	border-radius: 30px;
 	float: left;
@@ -154,11 +162,12 @@ img:hover {
 }
 
 .dark-mode {
-
 background-color: black;
-
 color: white;
+}
 
+.dark-mode a {
+color: white;
 }
 
 iframe {
