@@ -120,6 +120,7 @@ a {
 
 .main {
 	background-color: rgb(53, 53, 56);
+	color: white;
 }
 
 .mainpage a {
@@ -197,4 +198,16 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
 	line-height:3.5em;
+}
+
+/* Set additional styling options for the columns*/
+.column {
+float: left;
+width: 50%;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
 }
