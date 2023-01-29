@@ -40,6 +40,7 @@ footer a {
 	font-weight: bold;
 	font-size: 18px;
 	opacity: 0.8;
+	color: black
 }
 
 
@@ -103,12 +104,11 @@ hr {
 a {
 	text-decoration: none;
 	opacity: 0.8;
-	color:  #ffffff;
 }
 
 .mainpage {
 	border-radius: 30px;
-	background-color: rgb(36, 36, 168);
+	background-color: rgb(53, 53, 56);
 	padding: 10px;
 	color: white;
 }
