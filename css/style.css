@@ -170,25 +170,43 @@ marguee {
 	padding: 0;
 }
 
-img {
-	backface-visibility: hidden; transition: transform 0.5s ease-in-out; overflow: hidden;
+.logo {
+	float: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	width: 58px;
+	display: block;
+	/* align-content: center; */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-img:hover {
-	transform: scale(1.05)
-}
+/*img {
+ *	backface-visibility: hidden; transition: transform 0.5s ease-in-out; overflow: hidden;
+ *
+ *}
+*/ 
+
+/*img:hover {
+ *	transform: scale(1.05)
+ *
+ *}
+*/ 
 
 .dark-mode {
-background-color: black;
-color: white;
+	background-color: black;
+	color: white;
 }
 
 .dark-mode a {
-color: white;
+	color: white;
 }
 
 iframe {
-	background-color : transparent;
+	background-color: transparent;
 }
 
 .spacer {
@@ -196,21 +214,26 @@ iframe {
 }
 
 p {
-	line-height:3.5em;
+	line-height: 3.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	line-height:3.5em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 3.5em;
 }
 
 /* Set additional styling options for the columns*/
 .column {
-float: left;
-width: 50%;
+	float: left;
+	width: 50%;
 }
 
 .row:after {
-content: "";
-display: table;
-clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
