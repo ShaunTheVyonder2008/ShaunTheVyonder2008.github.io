@@ -237,3 +237,7 @@ h6 {
 	display: table;
 	clear: both;
 }
+
+ul.sitemap {
+	list-style-image: url("/images/closed.gif");
+}
