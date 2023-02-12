@@ -10,6 +10,15 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="/console.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+				$("#dialog").dialog();
+			});
+    </script>
 </head>
 
 <body>
@@ -27,6 +36,13 @@
 			<li><a href="https://github.com/ShaunTheVyonder2008/forums"><i class="fa fa-comments-o"></i> Discussion</a></li>
 		</ul>	
 		<div class="mainpage">
+			<div id="dialog" title="Urgent Message">
+				<p><img src="/images/warningicon.png" width="16" height="16"></p>
+				<p>Our site is expected to switch back to Neocities soon! Please be sure to note about our domain from operation on the server!</p>
+				<p>We're happy that you sticked with us from some time on GitHub pages, but is also decided other options.</p>
+				<p>Other servers such as IIS and Apache will be decided if one is chosen! Please take the time to clear cache if something goes wrong on the redirection!</p>
+				<p>Thank you for your support, and stay safe.</p>
+			</div>
 			<center>
 				<h1>Welcome back my friend!</h1>
 				<p>We are happy you can make it to this site today!</p>
