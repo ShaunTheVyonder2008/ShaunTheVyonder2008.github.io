@@ -103,12 +103,6 @@ ul.topnav li:hover {
 	opacity: 0.8;
 }
 
-hr {
-	border-bottom-style: solid;
-	border-bottom-color: white;
-	writing-mode: horizontal-tb;
-}
-
 a {
 	text-decoration: none;
 	opacity: 0.8;
@@ -233,5 +227,5 @@ ul.sitemap {
 }
 
 hr {
-	width: 700px;
+	width: 140px;
 }
