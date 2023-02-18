@@ -1,0 +1,68 @@
+<!-- Should be able to add content soon! -->
+<!-- Added some lines on console.js! -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="/console.js"></script>
+    <script>
+        const loginForm = document.getElementById("login-form");
+            const loginButton = document.getElementById("login-form-submit");
+            const loginErrorMsg = document.getElementById("login-error-msg");
+
+            // When the login button is clicked, the following code is executed
+            loginButton.addEventListener("click", (e) => {
+                // Prevent the default submission of the form
+                e.preventDefault();
+                // Get the values input by the user in the form fields
+                const username = loginForm.username.value;
+                const password = loginForm.password.value;
+
+                if (username === "admin1" && password === "administartor12") {
+                    // If the credentials are valid, show an alert box and reload the page
+                    alert("You have successfully logged in.");
+                    location.reload();
+                } else {
+                    // Otherwise, make the login error message show (change its oppacity)
+                    loginErrorMsg.style.opacity = 1;
+                }
+            })
+    </script>
+</head>
+
+<body>
+<div class="main">
+		<ul class="topnav">
+			<li><div class="logo"><img src="/images/logo.png" style="width: 58px;"></div>
+			<li><a href="/" target="_parent"><i class="fa fa-fw fa-home"></i> Home</a></li>
+			<li><a href="/about" target="_parent"><i class="fa fa-fw fa-envelope"></i> About us</a></li>
+			<li><a href="/socials" target="_parent"><i class='fa fa-users'></i> Socials</a></li>
+			<li><a href="https://github.com/ShaunTheVyonder2008/ShaunTheVyonder2008.github.io" target="_parent"><i class="fa fa-terminal"></i> View this repo</a></li>
+			<li><a href="/downloads" target="_parent"><i class="fa fa-cloud-download"></i> Downloads</a></li>
+			<li><a href="/gallery" target="_parent"><i class="fa fa-file-photo-o"></i> Gallery Wall</a></li>
+			<li><a href="/faq" target="_parent"><i class="fa fa-comment"></i> FAQ</a></li>
+			<!-- <li><a id="myID" href="#" onclick="myFunction();return false;" target="_parent"><i class="fa fa-gear"></i> Dark mode</a></li> -->
+			<li><a href="https://github.com/ShaunTheVyonder2008/forums"><i class="fa fa-comments-o"></i> Discussion</a></li>
+			<li><a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a></li>
+		</ul>	
+		<div class="mainpage">		
+            <h1>Login to TTNRT</h1>
+            <div id="login-error-msg-holder">
+                  <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                </div>
+                
+                <form id="login-form">
+                  <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+                  <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+                  <input type="submit" value="Login" id="login-form-submit">
+                </form>
+		</div>		
+</div>		
+</body>
+
+</html>
