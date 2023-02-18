@@ -9,7 +9,6 @@ body {
 	background-color: rgb(87, 87, 88);
 	transition: all 0.5s ease;
 	font-family: Arial, Helvetica, sans-serif;
-	color: rgb(255, 255, 255);
 }
 
 code {
@@ -111,7 +110,6 @@ a {
 .mainpage {
 	background-color: rgb(53, 53, 53);
 	padding: 10px;
-	color: white;
 	border: 1px solid #cccccc;
     border-radius: 8px;
 	text-align: center;
@@ -119,7 +117,6 @@ a {
 
 .main {
 	background-color: rgb(53, 53, 56);
-	color: white;
 }
 
 .navimg {
