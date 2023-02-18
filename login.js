@@ -7,11 +7,11 @@ if (loginButton) {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === "user" && password === "web_dev") {
-        alert("You have successfully logged in. \n Returning to Home Page");
-        location.href("/");
+    if (username === "shaun" && password === "admin") {
+        alert('You have successfully logged in. \n Returning to Home Page');
+        location.href('/');
      } else {
-        alert ("Your password is not correct or is not found on the database!");
+        alert ('Your password is not correct or is not found on the database!');
         location.reload();
      }
   }); 
