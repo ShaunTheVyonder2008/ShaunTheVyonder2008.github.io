@@ -26,7 +26,7 @@ console.log('....................................');
 function drawShape() {
             
     // get the canvas element using the DOM
-    var canvas = document.getElementById('myCanvas');
+    var canvas = document.getElementById('mycanvas');
     
     // Make sure we don't execute when canvas isn't supported
     if (canvas.getContext) {
