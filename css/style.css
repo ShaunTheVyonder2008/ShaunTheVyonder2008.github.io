@@ -21,30 +21,22 @@ footer {
 	background-color: rgb(234, 234, 234);
 	padding: 10px;
 	border: 1px solid #cccccc;
-        border-radius: 8px;
+    border-radius: 8px;
 	text-align: center;
 	margin: 15px;
 }
 
-.navimg {
-	border-radius: 30px;
-	float: left;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 3.5em;
 }
 
-
-/*p,
-*h1,
-*h2,
-*h3,
-*h4,
-*h5,
-*h6 {
-*	line-height: 3.5em;
-*}
-*/
 
 ul.sitemap {
 	list-style-image: url("/images/closed.gif");
