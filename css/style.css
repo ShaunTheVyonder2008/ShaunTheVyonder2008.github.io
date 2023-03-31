@@ -4,8 +4,8 @@
 
 #footer {
 	text-align: center;
-	margin-top: 100%;
-	background-color: grey;
+	background-color: darkgrey;
+	height: 100%;
 }
 
 .mainpage {
@@ -29,10 +29,11 @@ h6 {
 }
 
 
-ul.sitemap {
-	list-style-image: url("/images/closed.gif");
+hr {
+	width: 300px;
 }
 
-body {
-	min-height: 100vh;
+
+ul.sitemap {
+	list-style-image: url("/images/closed.gif");
 }
