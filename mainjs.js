@@ -1,12 +1,8 @@
 // Console log
 // In javascript!
 
-console.log('www.ttnrtsite.me');
-console.log('(C) TTNRT CORP');
-console.log(' 2018 - 2023');
-console.log('.............');
-console.log('Hey! If you just open this here');
-console.log('dont copy or paste anything here unless told so!');
-console.log('Thanks for understanding!');
+console.log('%c Hey you!', 'color: purple; font-size: 2.5rem; text-align: center');
+console.log('%c Please dont enter anything here, unless instructed!', 'color: purple; font-size: 2.5rem; text-align: center');
+console.log('%c Thank you!', 'color: purple; font-size: 2.5rem; text-align: center');
 
 // End of line
