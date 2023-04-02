@@ -1,8 +1,11 @@
 // Console log
 // In javascript!
 
-console.log('%c Hey you!', 'color: purple; font-size: 2.5rem; text-align: center');
-console.log('%c Please dont enter anything here, unless instructed!', 'color: purple; font-size: 2.5rem; text-align: center');
-console.log('%c Thank you!', 'color: purple; font-size: 2.5rem; text-align: center');
+console.log(
+    "%cTTNRT CORP\n%cHey! If someone told you to paste something here, there's a 200% chance you're being scammed.\n%cThanks for understanding!.\n%cmailto:hoffershaun842@gmail.com",
+    "color:blue;font-size:48px;font-weight:600;",
+    "color:red;font-size:20px;",
+    "color:green;font-size:12px;"
+    "color:white;font-size:12px;"
+);
 
-// End of line
