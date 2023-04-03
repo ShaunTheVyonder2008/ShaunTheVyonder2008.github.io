@@ -2,6 +2,10 @@
 	transition: all 0.5s ease;
 }
 
+body {
+	background-color: #282626;
+}
+
 #footer {
 	text-align: center;
 	background-color: darkgrey;
@@ -9,7 +13,7 @@
 }
 
 .mainpage {
-	background-color: rgb(234, 234, 234);
+	background-color: grey;
 	padding: 10px;
 	border: 1px solid #cccccc;
     border-radius: 8px;
