@@ -57,11 +57,23 @@ $(window).load(function(){
 <li class="nav-item"><a class="nav-link" href="//git.ttnrtsite.me"><i class="fa-brands fa-git-alt"></i> Git</a></li>
 <li class="nav-item"><a class="nav-link" href="//dl.ttnrtsite.me"><i class="fa-solid fa-cloud-arrow-down"></i> Downloads</a></li>
 <li class="nav-item"><a class="nav-link" href="//ping.ttnrtsite.me"><i class="fa-solid fa-table-tennis-paddle-ball"></i> Ping</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Repo
+</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="https://github.com/TTNRT/ttnrt.github.io/zipball/main"><i class="fa-solid fa-download"></i> Download as ZIP</a></li>
+<li><a class="dropdown-item" href="https://github.com/TTNRT/ttnrt.github.io/tarball/main"><i class="fa-solid fa-download"></i> Download as TAR</a></li>
+<li><hr class="dropdown-divider"></li>
+<li><a class="dropdown-item" href="https://github.com/TTNRT/ttnrt.github.io/"><i class="fa-brands fa-github"></i> View on GitHub</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 </nav>
-<div class="alert alert-primary d-flex align-items-center" role="alert">
+<br />
+<div class="alert alert-primary d-flex align-items-center container" role="alert">
 <i class="bi bi-info-circle-fill flex-shrink-0 me-2"></i>
 <div>We are going to host the new website source code here.</div>
 <div>You can use the live demo on our GitHub</div>
@@ -115,8 +127,6 @@ $('#return-to-top').on('click', function(e) {
     $('html, body').animate({scrollTop : 0}, 500);
 });
 </script>
-<a href="https://github.com/TTNRT/ttnrt.github.io/zipball/main" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download as ZIP</a>
-<a href="https://github.com/TTNRT/ttnrt.github.io/tarball/main" class="btn btn-primary"><i class="fa-solid fa-download"></i> Download as TAR</a>
 </div>
 </body>
 </html>
