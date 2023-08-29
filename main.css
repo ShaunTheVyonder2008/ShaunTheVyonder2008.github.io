@@ -1,13 +1,12 @@
-body {
-    background-color: ghostwhite;
-    color: black;
-}
-
 li>a {
     text-decoration: none;
-    color: black;
 }
 
 ul {
     list-style-type: none;
+}
+
+#approot {
+    padding: 2em; 
+    margin-top: 20px;
 }
