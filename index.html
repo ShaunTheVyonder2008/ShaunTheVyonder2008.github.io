@@ -126,7 +126,42 @@ $('#return-to-top').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({scrollTop : 0}, 500);
 });
+
+function center() {
+			let myDiv = document.getElementById("main");
+			if (myDiv.style.textAlign === "center") {
+				document.getElementById("main").style.textAlign = "left";
+			} else {
+			document.getElementById("main").style.textAlign = "center";
+		  }
+		}
+		
+		var fontSize = 1;
+			function zoomIn() {
+			fontSize += 0.1;
+			// document.body.style.fontSize = fontSize + "em";
+			document.getElementById("main").style.fontSize = fontSize + "em";
+		}
+		function zoomOut() {
+			fontSize -= 0.1;
+			document.getElementById("main").style.fontSize = fontSize + "em";
+		}
+		
+		// source
+		// https://www.w3schools.com/jsref/prop_style_fontsize.asp
+		// https://www.viralpatel.net/implement-simple-font-zoomer-in-javascript-html/
+		// https://www.udacity.com/blog/2021/06/javascript-css.html
 </script>
+<div class="dropdown" style="position: fixed; bottom: 20px; left: 20px; z-index: 10;">
+<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+Tools
+</button>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#" onclick="center(); return false;">Center</a></li>
+<li><a class="dropdown-item" href="#" onClick="zoomIn(); return false;">Zoom in</a></li>
+<li><a class="dropdown-item" href="#" onClick="zoomOut(); return false;">Zoom out</a></li>
+</ul>
+</div>
 </div>
 </body>
 </html>
