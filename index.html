@@ -78,6 +78,19 @@ Repo
 <div>We are going to host the new website source code here.</div>
 <div>You can use the live demo on our GitHub</div>
 </div>
+<noscript>
+    <div class="alert alert-warning d-flex align-items-center container"  role="alert">
+        <i class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"></i> 
+        <div>JavaScript is disabled.  This site will not work properly without it.</div>
+    </div>
+</noscript>
+<noscript>
+<style>
+    #return-to-top, #cb-cookie-banner, #tools, .pageloader {
+        display: none;
+    }
+</style>
+</noscript>
 <div id="banner">
 <center>
 <img src="//cdn.ttnrtsite.me/images/logo.png">
@@ -152,7 +165,7 @@ function center() {
 		// https://www.viralpatel.net/implement-simple-font-zoomer-in-javascript-html/
 		// https://www.udacity.com/blog/2021/06/javascript-css.html
 </script>
-<div class="dropdown" style="position: fixed; bottom: 20px; left: 20px; z-index: 10;">
+<div id="tools" class="dropdown" style="position: fixed; bottom: 20px; left: 20px; z-index: 10;">
 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 Tools
 </button>
