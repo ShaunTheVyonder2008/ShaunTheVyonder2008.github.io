@@ -14,17 +14,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <style>
-        #cb-cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            z-index: 999;
-            border-radius: 0;
-            display: none;
-        }
-    </style>
-    <style>
         #banner,
         #main {
             padding: 2em;
@@ -40,6 +29,16 @@
             transition: transform 0.3s;
             overflow: hidden;
         }
+
+        #cb-cookie-banner {
+            /*position: fixed;*/
+            /*bottom: 0;*/
+            /*left: 0;*/
+            width: 100%;
+            z-index: 999;
+            border-radius: 0;
+            display: none;
+        }
     </style>
 </head>
 
@@ -51,12 +50,14 @@
             <div class="bounce3"></div>
         </div>
     </div>
-    <script>
-        $(window).load(function () {
-            $('.pageloader').fadeOut(300);
-        });
-    </script>
     <div id="app">
+        <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+            🍪 This website uses cookies to ensure you get the best experience on our website.
+            <a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
+            <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+                I Got It
+            </button>
+        </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand">TTNRT</a>
@@ -194,13 +195,6 @@
                     posts similar bursts of media fancy <a target="_blank"
                         href="http://emdashmedia.blogspot.com/">here</a></em>.
             </p>
-        </div>
-        <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
-            🍪 This website uses cookies to ensure you get the best experience on our website.
-            <a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
-            <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
-                I Got It
-            </button>
         </div>
         <script src="//cdn.ttnrtsite.me/scripts/cookie.js"></script>
         <button type="button" class="btn btn-danger btn-floating btn-lg" id="return-to-top">

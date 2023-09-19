@@ -39,3 +39,9 @@ function zoomOut() {
 // https://www.w3schools.com/jsref/prop_style_fontsize.asp
 // https://www.viralpatel.net/implement-simple-font-zoomer-in-javascript-html/
 // https://www.udacity.com/blog/2021/06/javascript-css.html
+
+
+// PAgeloader
+$(window).load(function () {
+    $('.pageloader').fadeOut(300);
+});
