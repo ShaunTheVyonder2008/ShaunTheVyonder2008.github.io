@@ -1,218 +1,137 @@
 <!DOCTYPE html>
 <html lang="en" height="100%">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | TTNRT</title>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="//cdn.ttnrtsite.me/scripts/consoleinfo.js"></script>
-    <script src="//cdn.ttnrtsite.me/bootstrap/js/bootstrap.min.js"></script>
-    <link href="//cdn.ttnrtsite.me/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="//cdn.ttnrtsite.me/scripts/darkmode.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <style>
-        #banner,
-        #main {
-            padding: 2em;
-            margin-top: 20px;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | TTNRT</title>
+<link rel="stylesheet" href="//cdn.ttnrtsite.me/styles/app.css">
+<link rel="stylesheet" href="//cdn.ttnrtsite.me/styles/pageloader.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<script src="//cdn.ttnrtsite.me/scripts/consoleinfo.js"></script>
+<link href="//cdn.ttnrtsite.me/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="//cdn.ttnrtsite.me/scripts/darkmode.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+<script src="//cdn.ttnrtsite.me/bootstrap/js/bootstrap.bundle.min.js"></script>
+<style>
+#banner,
+#main {
+    padding: 2em;
+    margin-top: 20px;
+}
 
-        #return-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: none;
-            z-index: 10;
-            transition: transform 0.3s;
-            overflow: hidden;
-        }
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 10;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
 
-        #cb-cookie-banner {
-            /*position: fixed;*/
-            /*bottom: 0;*/
-            /*left: 0;*/
-            width: 100%;
-            z-index: 999;
-            border-radius: 0;
-            display: none;
-        }
-    </style>
+#cb-cookie-banner {
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    width: 100%;
+    z-index: 999;
+    border-radius: 0;
+    display: none;
+}
+</style>
 </head>
-
 <body>
-    <div class="pageloader">
-        <div class="spinner-dot-bounce">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <div id="app">
-        <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
-            🍪 This website uses cookies to ensure you get the best experience on our website.
-            <a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
-            <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
-                I Got It
-            </button>
-        </div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand">TTNRT</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="//status.ttnrtsite.me"><i
-                                    class="fa-solid fa-server"></i> Status</a></li>
-                        <li class="nav-item"><a class="nav-link" href="//git.ttnrtsite.me"><i
-                                    class="fa-brands fa-git-alt"></i> Git</a></li>
-                        <li class="nav-item"><a class="nav-link" href="//dl.ttnrtsite.me"><i
-                                    class="fa-solid fa-cloud-arrow-down"></i> Downloads</a></li>
-                        <li class="nav-item"><a class="nav-link" href="//ping.ttnrtsite.me"><i
-                                    class="fa-solid fa-table-tennis-paddle-ball"></i> Ping</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Repo
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item"
-                                        href="https://github.com/TTNRT/ttnrt.github.io/zipball/main"><i
-                                            class="fa-solid fa-download"></i> Download as ZIP</a></li>
-                                <li><a class="dropdown-item"
-                                        href="https://github.com/TTNRT/ttnrt.github.io/tarball/main"><i
-                                            class="fa-solid fa-download"></i> Download as TAR</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="https://github.com/TTNRT/ttnrt.github.io/"><i
-                                            class="fa-brands fa-github"></i> View on GitHub</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <br />
-        <div class="alert alert-primary d-flex align-items-center container" role="alert">
-            <i class="bi bi-info-circle-fill flex-shrink-0 me-2"></i>
-            <div>We are going to host the new website source code here.</div>
-            <div>You can use the live demo on our GitHub</div>
-        </div>
-        <noscript>
-            <div class="alert alert-warning d-flex align-items-center container" role="alert">
-                <i class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"></i>
-                <div>JavaScript is disabled. This site will not work properly without it.</div>
-            </div>
-        </noscript>
-        <noscript>
-            <style>
-                #return-to-top,
-                #cb-cookie-banner,
-                #tools,
-                .pageloader {
-                    display: none;
-                }
-            </style>
-        </noscript>
-        <div id="banner">
-            <center>
-                <img src="//cdn.ttnrtsite.me/images/logo.png">
-                <h1>Welcome to TTNRT!</h1>
-                <p></p>
-                <em>Home of the future</em>
-            </center>
-        </div>
-        <div id="main">
-            <p>A week ago a friend invited a couple of other couples over for dinner. Eventually, the food (but not the
-                wine) was cleared off the table for what turned out to be some fierce Scrabbling. Heeding the strategy
-                of going for the shorter, more valuable word over the longer cheaper word, our final play was
-                &#147;Bon,&#148; which&#150;as luck would have it!&#150;happens to be <a target="_blank"
-                    href="http://en.wikipedia.org/wiki/Bon_Festival">a Japanese Buddhist festival</a>, and not, as I had
-                originally asserted while laying the tiles on the board, one half of a chocolate-covered cherry treat.
-                Anyway, the strategy worked. My team only lost by 53 points instead of 58.</p>
-            <p>Just the day before, our host <a target="_blank"
-                    href="http://wicknews.wordpress.com/2008/10/10/short-is-the-new-long/">had written of the
-                    challenges</a> of writing short. In journalism&#150;my friend&#146;s chosen trade, and mostly my
-                own, too&#150;Mark Twain&#146;s observation undoubtedly applies: &#147;I didn&#146;t have time to write
-                a short letter, so I wrote a long one instead.&#148; The principle holds across genres, in letters,
-                reporting, and other writing. It&#146;s harder to be concise than to blather. (Full disclosure, this
-                blog post will clock in at a blather-esque 803 words.) Good writing is boiled down, not baked full of
-                air like a souffl??. No matter how yummy souffl??s may be. Which they are. Yummy like a Grisham novel.
-            </p>
-            <p>Lately, I&#146;ve been noticing how my sentences have a tendency to keep going when I write them
-                onscreen. This goes for concentrated writing as well as correspondence. (Twain probably believed that
-                correspondence, in an ideal world, also demands concentration. But he never used email.) Last week I
-                caught myself packing four conjunctions into a three-line sentence in an email. That&#146;s inexcusable.
-                Since then, I have tried to eschew conjunctions whenever possible. Gone are the commas, the and&#146;s,
-                but&#146;s, and so&#146;s; in are staccato declaratives. Better to read like bad Hemingway than bad
-                Faulkner.</p>
-            <p>Length&#8211;as we all know, and for lack of a more original or effective way of saying it&#8211;matters.
-                But (ahem), it&#146;s also a matter of how you use it. Style and length are technically two different
-                things.</p>
-            <p>Try putting some prose onscreen, though, and they mix themselves up pretty quickly. This has much to do
-                with the time constraints we claim to feel in the digital age. We don&#146;t have time to compose
-                letters and post them anymore&#8211;much less pay postage, what with all the banks kinda-sorta losing
-                our money these days&#8211;so we blast a few emails. We don&#146;t have time to talk, so we text. We
-                don&#146;t have time to text to specific people, so we update our Facebook status. We don&#146;t have
-                time to write essays, so we blog.</p>
-            <p>I&#146;m less interested by the superficial reduction of words&#8211;i.e. the always charming imho or c u
-                l8r&#8211;than the genres in which those communications occur: blogs, texts, tweets, emails. All these
-                interstitial communiques, do they really reflect super brevity that would make Twain proud? Or do they
-                just reflect poorly stylized writing that desperately seeks a clearer form?</p>
-            <p>I rather think the latter. Clive Thompson <a target="_blank"
-                    href="http://www.nytimes.com/2008/09/07/magazine/07awareness-t.html?_r=2&#038;pagewanted=1&#038;ref=magazine&#038;oref=slogin&#038;oref=slogin">wrote
-                    last month</a> in the NYT Magazine that constant digital updates, after a day, can begin &#147;to
-                feel like a short story; follow it for a month, and it&#146;s a novel.&#148; He was right to see the
-                bits as part of a larger whole. The words now flying through our digital pipes &#038; ether more or less
-                tend to resemble parts of bigger units, perhaps even familiar genres. But stories and novels have
-                definite conclusions; they also have conventional lengths. Quick, how long is the conventional blog,
-                when you add up all of its posts and comments? How long is the longest email thread you send back and
-                forth on a single topic?</p>
-            <p>Most important: What exactly are we writing when we&#146;re doing all of this writing? <span
-                    id="more-16004"></span>I won&#146;t pretend to coin a whole new term here; I still think the best we
-                can muster is a more fitting analogue. And if we must find an analogue in an existing literary unit, I
-                propose the paragraph. Our constant writing has begun to feel like a neverending digital paragraph. Not
-                a tight, stabbing paragraph from <em>The Sun Also Rises</em> or even a graceful, sometimes-slinking,
-                sometimes-soaring paragraph from <em>Absalom! Absalom!</em>, I mean a convoluted, haphazard, meandering
-                paragraph, something like Kerouac&#146;s <a target="_blank"
-                    href="http://www.msnbc.msn.com/id/14045410/">original draft of On the Road</a>&#8211;only taped
-                together by bytes. And 1 percent as interesting.</p>
-            <p>Paragraphs, particularly those that wrap from one page to the next, inherently possess a necessary
-                suspension that tightens the reader&#146;s focus yet breaks down the narrative into digestable sections.
-                Just like emails or blogs or texts. The mental questions while reading all of these feel the same:</p>
-            <p>&#147;Is this the last line or is there more?&#148;</p>
-            <p>&#147;Is the writer really trying to say something here, or just setting up a larger point?&#148;</p>
-            <p>&#147;Does this part have the information I&#146;m looking for?&#148;</p>
-            <p>(&#147;Can I skip ahead?&#148;)<br />
-                <em>David F. Smydra Jr. is a reporter, writer, and editor living in Silicon Valley. He occasionally
-                    posts similar bursts of media fancy <a target="_blank"
-                        href="http://emdashmedia.blogspot.com/">here</a></em>.
-            </p>
-        </div>
-        <script src="//cdn.ttnrtsite.me/scripts/cookie.js"></script>
-        <button type="button" class="btn btn-danger btn-floating btn-lg" id="return-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        <div id="tools" class="dropdown" style="position: fixed; bottom: 20px; left: 20px; z-index: 10;">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Tools
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" onclick="center(); return false;">Center</a></li>
-                <li><a class="dropdown-item" href="#" onClick="zoomIn(); return false;">Zoom in</a></li>
-                <li><a class="dropdown-item" href="#" onClick="zoomOut(); return false;">Zoom out</a></li>
-            </ul>
-        </div>
-    </div>
 <script src="/config.js"></script>
+<div class="pageloader">
+<div class="spinner-dot-bounce">
+<div class="bounce1"></div>
+<div class="bounce2"></div>
+<div class="bounce3"></div>
+</div>
+</div>
+<div id="app">
+<div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+🍪 This website uses cookies to ensure you get the best experience on our website.
+<a href="https://www.cookiesandyou.com/" target="blank">Learn more</a>
+<button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+I Got It
+</button>
+</div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container-fluid">
+<a class="navbar-brand">TTNRT</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" href="//status.ttnrtsite.me"><i class="fa-solid fa-server"></i> Status</a></li>
+<li class="nav-item"><a class="nav-link" href="//git.ttnrtsite.me"><i class="fa-brands fa-git-alt"></i> Git</a></li>
+<li class="nav-item"><a class="nav-link" href="//dl.ttnrtsite.me"><i class="fa-solid fa-cloud-arrow-down"></i> Downloads</a></li>
+<li class="nav-item"><a class="nav-link" href="//ping.ttnrtsite.me"><i class="fa-solid fa-table-tennis-paddle-ball"></i> Ping</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Repo
+</a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="https://github.com/TTNRT/ttnrt.github.io/zipball/main"><i class="fa-solid fa-download"></i> Download as ZIP</a></li>
+<li><a class="dropdown-item" href="https://github.com/TTNRT/ttnrt.github.io/tarball/main"><i class="fa-solid fa-download"></i> Download as TAR</a></li>
+<li>
+<hr class="dropdown-divider">
+</li>
+<li><a class="dropdown-item" href="https://github.com/TTNRT/ttnrt.github.io/"><i class="fa-brands fa-github"></i> View on GitHub</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<br />
+<div class="alert alert-primary d-flex align-items-center container" role="alert">
+<i class="bi bi-info-circle-fill flex-shrink-0 me-2"></i>
+<div>We are going to host the new website source code here.</div>
+<div>You can use the live demo on our GitHub</div>
+</div>
+<noscript>
+<div class="alert alert-warning d-flex align-items-center container" role="alert">
+<i class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"></i>
+<div>JavaScript is disabled. This site will not work properly without it.</div>
+</div>
+</noscript>
+<noscript>
+<style>
+#return-to-top, #cb-cookie-banner, #tools, .pageloader {
+    display: none;
+}
+</style>
+</noscript>
+<div id="banner">
+<center>
+<img src="//cdn.ttnrtsite.me/images/logo.png">
+<h1>Welcome to TTNRT!</h1>
+<p></p>
+<em>Home of the future</em>
+</center>
+</div>
+<div id="main" class="text-center">
+<a href="https://www.ttnrtsite.me/" target="_blank">New site</a>
+</div>
+<script src="//cdn.ttnrtsite.me/scripts/cookie.js"></script>
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="return-to-top">
+<i class="fas fa-arrow-up"></i>
+</button>
+<div id="tools" class="dropdown" style="position: fixed; bottom: 20px; left: 20px; z-index: 10;">
+<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+Tools
+</button>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#" onclick="center(); return false;">Center</a></li>
+<li><a class="dropdown-item" href="#" onClick="zoomIn(); return false;">Zoom in</a></li>
+<li><a class="dropdown-item" href="#" onClick="zoomOut(); return false;">Zoom out</a></li>
+</ul>
+</div>
+</div>
 </body>
-
 </html>
