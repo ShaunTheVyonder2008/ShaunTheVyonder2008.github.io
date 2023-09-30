@@ -1,7 +1,7 @@
-This repo is no longer mantained by admins!
+# ttnrt.github.io
 
-Please note that pushing to this repo is strictly prohibited!
+Welcome to our beta version of the TTNRT website!
 
-Do not atempt to do so!
+We are hosting our source code here for when use it.
 
-This will only be used in case of a problem with our new site!
+If you would like to see the newer version, please see this link: [www.ttnrtsite.me](https://www.ttnrtsite.me)
