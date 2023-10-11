@@ -1,0 +1,77 @@
+<noscript>
+<div class="alert alert-warning d-flex align-items-center container" role="alert">
+<i class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"></i>
+<div>JavaScript is disabled. This site will not work properly without it.</div>
+</div>
+</noscript>
+<noscript>
+<style>
+#return-to-top, #cb-cookie-banner, #tools, .pageloader {
+    display: none;
+}
+</style>
+</noscript>
+
+<button type="button" class="btn btn-danger btn-floating btn-lg" id="return-to-top">
+<i class="fas fa-arrow-up"></i>
+</button>
+
+// Return to top
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 400) {
+        $('#return-to-top').fadeIn();
+    } else {
+        $('#return-to-top').fadeOut();
+    }
+});
+
+$('#return-to-top').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 500);
+});
+
+// Tools for eyes
+
+function center() {
+    let myDiv = document.getElementById("main");
+    if (myDiv.style.textAlign === "center") {
+        document.getElementById("main").style.textAlign = "left";
+    } else {
+        document.getElementById("main").style.textAlign = "center";
+    }
+}
+
+var fontSize = 1;
+function zoomIn() {
+    fontSize += 0.1;
+    // document.body.style.fontSize = fontSize + "em";
+    document.getElementById("main").style.fontSize = fontSize + "em";
+}
+function zoomOut() {
+    fontSize -= 0.1;
+    document.getElementById("main").style.fontSize = fontSize + "em";
+}
+
+// Tools for eyes
+
+function center() {
+    let myDiv = document.getElementById("main");
+    if (myDiv.style.textAlign === "center") {
+        document.getElementById("main").style.textAlign = "left";
+    } else {
+        document.getElementById("main").style.textAlign = "center";
+    }
+}
+
+
+<div id="tools" class="dropdown" style="position: fixed; bottom: 20px; left: 20px; z-index: 10;">
+<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+Tools
+</button>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#" onclick="center(); return false;">Center</a></li>
+<li><a class="dropdown-item" href="#" onClick="zoomIn(); return false;">Zoom in</a></li>
+<li><a class="dropdown-item" href="#" onClick="zoomOut(); return false;">Zoom out</a></li>
+</ul>
+</div>
