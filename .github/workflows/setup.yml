@@ -1,4 +1,4 @@
-name: <Your-action-name>
+name: Nextjs
 
 on:
   push:
