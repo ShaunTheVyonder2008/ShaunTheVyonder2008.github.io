@@ -1,30 +1,32 @@
-name: GitHub Pages deploy
+name: <Your-action-name>
 
 on:
   push:
-    branches: [main]
+    branches: main    # <The branch> you want to dected
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4.1.1
-      - name: Use Node.js 18.x
-        uses: actions/setup-node@v4.0.0
+        uses: actions/checkout@v2
+
+      - name: Cache  💾
+        uses: actions/cache@v2
         with:
-          node-version: '18.x'
+          path: ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
 
-      - name: Installing my packages
-        run: npm ci
-
-      - name: Build my App
-        run: npm run build && touch ./out/.nojekyll
+      - run: rm -rf node_modules/.cache
+      - run: npm ci
+      - run: npm run build
+      - run: npm run export
+      - run: touch out/.nojekyll
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.4.3
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: public # The branch the action should deploy to.
-          FOLDER: out # The folder the action should 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          force_orphan: true
