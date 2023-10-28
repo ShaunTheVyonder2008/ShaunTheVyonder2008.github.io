@@ -6,7 +6,7 @@ module.exports = {
       test: /\.svg$/,
       use: ['@svgr/webpack']
     });
-
+    output: 'export';
     return config;
   },
   assetPrefix: !debug ? '' : ''
