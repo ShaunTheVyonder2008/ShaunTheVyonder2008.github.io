@@ -1,3 +1,8 @@
+---
+import NavigationReact from "../components/navbar/NavigationReact";
+import "../styles/input.css";
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,8 +11,10 @@
     <meta name="generator" content={Astro.generator} />
     <title>Hi there! | TTNRT CO</title>
   </head>
-  <main class="flex flex-col h-screen bg-[#171717] text-white">
+  <main>
     <body>
+    <main class="flex flex-col h-screen">
+    <NavigationReact client:load currentURL={Astro.request.url} />
       <div class="mt-14 flex-1"><slot /></div>
     </body>
   </main>

@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'MusescoreIcon';
+    src: url('/fonts/MusescoreIcon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.icon {
+    font-family: 'MusescoreIcon', sans-serif;
+    font-size: 16px
+}
+
+.icon-large {
+    font-size: 36px;
+}
+
+.icon-medium {
+    font-size: 24px;
+}
+
+.icon-save:before {
+    content: "\EF29";
+}
+
+.icon-share:before {
+    content: "\F359"
+}
+
+.icon-export:before {
+    content: "\EF24"
+}
+
+.icon-import:before {
+    content: "\F357"
+}
+
+.icon-mixer:before {
+    content: "\EF27"
+}
+
+.icon-arrow-left:before {
+    content: "\EF35"
+}
+
+.icon-arrow-right:before {
+    content: "\EF34"
+}
+
+.icon-monitor:before {
+    content: "\F35E"
+}
+
+.icon-file:before {
+    content: "\EF22"
+}
+
+.icon-plug:before {
+    content: "\F440"
+}
+
+.icon-waveform:before {
+    content: "\F43C"
+}
+
+.icon-caret-right:before {
+    content: "\EF11"
+}
+
+.icon-caret-down:before {
+    content: "\EF12"
+}
+
+.icon-cloud-upload:before {
+    content: "\EF25"
+}
+
+.icon-microphone:before {
+    content: "\F41B"
+}
+
+.icon-waveform:before {
+    content: "\F43C"
+}
+
+.icon-cycle:before {
+    content: "\F358"
+} 
