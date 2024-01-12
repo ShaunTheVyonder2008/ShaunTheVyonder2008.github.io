@@ -22,6 +22,7 @@
     "@astrojs/react": "^3.0.9",
     "@fontsource-variable/signika": "^5.0.18",
     "@tailwindcss/typography": "^0.5.10",
+    "daisyui": "^4.6.0",
     "framer-motion": "^10.18.0",
     "react": "^18.2.0"
   }

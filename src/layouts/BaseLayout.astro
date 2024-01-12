@@ -1,6 +1,14 @@
 ---
-import NavigationReact from "../components/navbar/NavigationReact";
+import Navbar from "../components/navbar.html";
 import "../styles/input.css";
+
+export interface Props {
+  title: string;
+  description: string;
+}
+const {
+  title = "TTNRT CO",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -9,12 +17,16 @@ import "../styles/input.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Hi there! | TTNRT CO</title>
+    <meta
+      name="title"
+      content={title}
+    />
+    <title>{title}</title>
   </head>
   <main>
     <body>
     <main class="flex flex-col h-screen">
-    <NavigationReact client:load currentURL={Astro.request.url} />
+    <Navbar />
       <div class="mt-14 flex-1"><slot /></div>
     </body>
   </main>
