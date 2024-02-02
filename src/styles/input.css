@@ -4,116 +4,28 @@
 
 @layer base {
     h1 {
-        @apply text-2xl md:text-4xl text-gray-900 font-semibold leading-tight
+        @apply text-5xl dark:text-white
     }
 
     h2 {
-        @apply text-xl md:text-3xl text-gray-800 font-semibold leading-tight
+        @apply text-4xl dark:text-white
     }
 
 
     h3 {
-        @apply text-lg md:text-2xl text-gray-700 font-bold
+        @apply text-3xl dark:text-white
     }
 
     h4 {
-        @apply text-base md:text-xl text-gray-700 font-bold xl:leading-snug
+        @apply text-2xl  dark:text-white
     }
 
     h5 {
-        @apply text-base font-bold text-gray-700
+        @apply text-xl dark:text-white
     }
 
     p {
-        @apply text-base text-gray-700 leading-snug
+        @apply text-black dark:text-white
     }
 
-    label {
-        @apply text-gray-700
-    }
-    
-    .list li {
-        @apply mt-2 list-disc list-inside text-base lg:text-lg text-gray-700 leading-relaxed
-    }
-
-    small {
-        @apply text-xs md:text-sm uppercase text-gray-700
-    }
-
-    .hyperlink {
-        @apply text-blue-700 underline hover:text-blue-600
-    }
-
-    .dark-hyperlink {
-        @apply text-blue-400 underline hover:text-blue-300
-    }
-
-    .footer-link-list li {
-        @apply text-gray-700 hover:text-blue-700 w-fit
-    }
-
-    .copyright {
-        @apply text-xs text-gray-600
-    }
-
-    .sub-heading {
-        @apply text-base
-    }
-
-    .faq-question {
-        @apply font-semibold text-lg text-gray-800
-    }
-
-    .footer-list-heading {
-        @apply font-semibold text-lg text-gray-800
-    }
-
-    .privacy-banner-heading {
-        @apply font-semibold text-2xl text-gray-800
-    }
-
-    .additional-resource-heading {
-        @apply font-semibold text-lg text-gray-800
-    }
-
-    .skip-to-content {
-        position: fixed;
-        background-color: rgb(29 78 216 );
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        left: 0px;
-        right: 0px;
-        top: 0px;   
-        opacity: 0;
-        transition-property: top;
-        transition-duration: .3s;
-        height: 48px;
-    }
-
-    .skip-to-content:focus {
-        top: 56px;
-        opacity: 1;
-    }
-
-    #consent-popup {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 2rem;
-        background-color: #fff;
-        opacity: 1;
-        transition: bottom .5s ease;
-
-        &.hide{
-           bottom:-412px;
-        }
-
-   
-    }
-
-    
-    
 }
