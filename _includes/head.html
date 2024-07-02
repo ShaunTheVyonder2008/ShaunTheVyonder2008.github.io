@@ -1,0 +1,29 @@
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+<script>
+    // Set theme to the user's preferred color scheme
+    function updateTheme() {
+        const colorMode = window.matchMedia("(prefers-color-scheme: dark)").matches ?
+          "dark" :
+          "light";
+        document.querySelector("html").setAttribute("data-bs-theme", colorMode);
+    }
+
+    // Set theme on load
+    updateTheme()
+
+    // Update theme when the preferred scheme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme)
+</script>
+<style>
+[data-bs-theme=dark] {
+    --bs-body-bg: var(--bs-black) !important;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.ttnrtsite.me/styles/fontawesome/css/all.min.css" />
+<link href="https://cdn.ttnrtsite.me/styles/halfmoon/halfmoon.min.css" rel="stylesheet">
+<script src="https://cdn.ttnrtsite.me/scripts/jquery-3.7.1.min.js"></script>
+</head>

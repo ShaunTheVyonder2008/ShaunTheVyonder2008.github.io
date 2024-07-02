@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{%- include head.html -%}
+<body>
+{%- include nav.html -%}
+<div class="container-fluid mt-3" style="padding: 2em;">
+{{ content }}
+</div>
+<script src="https://cdn.ttnrtsite.me/styles/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
